@@ -1,9 +1,4 @@
 # Force LF line endings for Linux / PetaLinux
-* text eol=lf
-
-# Shell scripts
-*.sh text eol=lf
-
 # PetaLinux config / project files
 *.project text eol=lf
 *.config text eol=lf
