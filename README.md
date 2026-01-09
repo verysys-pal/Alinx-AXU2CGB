@@ -2,7 +2,7 @@
 
 ---
 ### Hardware
-- Link: [] https://cqsrdbo4fm8.feishu.cn/wiki/OaEVwjOZaiUzQUkLZSTceFUInQh
+- Link : [Development Board](https://cqsrdbo4fm8.feishu.cn/wiki/OaEVwjOZaiUzQUkLZSTceFUInQh)
 
 ---
 ### course_s1 : FPGA Tutorial 2023.1
@@ -38,5 +38,19 @@
 ### course_s6 : HLS Tutorial
 - HLS (High-Level Synthesis) 프로젝트 및 튜토리얼
 
-
-
+---
+### supporting module
+- AN108
+  + 8bit 32MSPS AD to125MSPS DA module
+- <span style="color: #21c133ff"> AN706 : 8채널 AD </span>
+  + 16bit 200ksps Synchronous Sampling AD7606 AD Module
+- <span style="color: #21c133ff"> AN871_LCD </span>
+  + AN970 7inch Touch Screen Module
+- AN3485
+  + RS232 RS422 RS485 Communication module
+- <span style="color: #21c133ff"> AN5642_Camera </span>
+  + 5MP Binocular Camera Module OV5640
+- AN9238
+  + 65MSPS 12bit AD9238 AD Analog digital signal conversion module
+- AN9767
+  + 14bit 125Msps DA BNC Analog Output AD9767 Module
