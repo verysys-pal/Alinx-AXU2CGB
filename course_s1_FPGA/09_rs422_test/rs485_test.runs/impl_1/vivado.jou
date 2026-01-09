@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov  2 18:47:30 2020
+# Process ID: 13152
+# Current directory: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/09_rs422_test/rs485_test.runs/impl_1
+# Command line: vivado.exe -log rs422_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rs422_top.tcl -notrace
+# Log file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/09_rs422_test/rs485_test.runs/impl_1/rs422_top.vdi
+# Journal file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/09_rs422_test/rs485_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rs422_top.tcl -notrace

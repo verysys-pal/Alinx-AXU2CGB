@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:E:/XilinxPrj/AXU2CG/course_32b/03_ram_test/ram_test.srcs/constrs_1/new/ram.xdc rfile:../../../ram_test.srcs/constrs_1/new/ram.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB11 [get_ports clk]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA13 [get_ports rst_n]

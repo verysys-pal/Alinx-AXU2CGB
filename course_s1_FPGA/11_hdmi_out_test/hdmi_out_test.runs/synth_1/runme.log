@@ -1,0 +1,435 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xczu2cg-sfvc784-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Device 21-403] Loading part xczu2cg-sfvc784-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14096
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1462.750 ; gain = 75.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/color_bar.v:13]
+	Parameter H_ACTIVE bound to: 16'b0000011110000000 
+	Parameter H_FP bound to: 16'b0000000001011000 
+	Parameter H_SYNC bound to: 16'b0000000000101100 
+	Parameter H_BP bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE bound to: 16'b0000010000111000 
+	Parameter V_FP bound to: 16'b0000000000000100 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000100100 
+	Parameter H_TOTAL bound to: 16'b0000100010011000 
+	Parameter V_TOTAL bound to: 16'b0000010001100101 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (1#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/color_bar.v:13]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.runs/synth_1/.Xil/Vivado-13052-DESKTOP-0FF260C/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (3#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.runs/synth_1/.Xil/Vivado-13052-DESKTOP-0FF260C/realtime/video_pll_stub.v:5]
+WARNING: [Synth 8-7071] port 'reset' of module 'video_pll' is unconnected for instance 'video_pll_m0' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/top.v:79]
+WARNING: [Synth 8-7023] instance 'video_pll_m0' of module 'video_pll' has 5 connections declared, but only 4 given [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/top.v:79]
+INFO: [Synth 8-6157] synthesizing module 'i2c_config' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_config.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_I2C_CHECK bound to: 1 - type: integer 
+	Parameter S_WR_I2C bound to: 2 - type: integer 
+	Parameter S_WR_I2C_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_top' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_top.v:30]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_WR_DEV_ADDR bound to: 1 - type: integer 
+	Parameter S_WR_REG_ADDR bound to: 2 - type: integer 
+	Parameter S_WR_DATA bound to: 3 - type: integer 
+	Parameter S_WR_ACK bound to: 4 - type: integer 
+	Parameter S_WR_ERR_NACK bound to: 5 - type: integer 
+	Parameter S_RD_DEV_ADDR0 bound to: 6 - type: integer 
+	Parameter S_RD_REG_ADDR bound to: 7 - type: integer 
+	Parameter S_RD_DEV_ADDR1 bound to: 8 - type: integer 
+	Parameter S_RD_DATA bound to: 9 - type: integer 
+	Parameter S_RD_STOP bound to: 10 - type: integer 
+	Parameter S_WR_STOP bound to: 11 - type: integer 
+	Parameter S_WAIT bound to: 12 - type: integer 
+	Parameter S_WR_REG_ADDR1 bound to: 13 - type: integer 
+	Parameter S_RD_REG_ADDR1 bound to: 14 - type: integer 
+	Parameter S_RD_ACK bound to: 15 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_top.v:96]
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_byte_ctrl' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:75]
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_READ bound to: 5'b00010 
+	Parameter ST_WRITE bound to: 5'b00100 
+	Parameter ST_ACK bound to: 5'b01000 
+	Parameter ST_STOP bound to: 5'b10000 
+INFO: [Synth 8-6157] synthesizing module 'i2c_master_bit_ctrl' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:143]
+	Parameter idle bound to: 18'b000000000000000000 
+	Parameter start_a bound to: 18'b000000000000000001 
+	Parameter start_b bound to: 18'b000000000000000010 
+	Parameter start_c bound to: 18'b000000000000000100 
+	Parameter start_d bound to: 18'b000000000000001000 
+	Parameter start_e bound to: 18'b000000000000010000 
+	Parameter stop_a bound to: 18'b000000000000100000 
+	Parameter stop_b bound to: 18'b000000000001000000 
+	Parameter stop_c bound to: 18'b000000000010000000 
+	Parameter stop_d bound to: 18'b000000000100000000 
+	Parameter rd_a bound to: 18'b000000001000000000 
+	Parameter rd_b bound to: 18'b000000010000000000 
+	Parameter rd_c bound to: 18'b000000100000000000 
+	Parameter rd_d bound to: 18'b000001000000000000 
+	Parameter wr_a bound to: 18'b000010000000000000 
+	Parameter wr_b bound to: 18'b000100000000000000 
+	Parameter wr_c bound to: 18'b001000000000000000 
+	Parameter wr_d bound to: 18'b010000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_bit_ctrl' (4#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_bit_ctrl.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_byte_ctrl' (5#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_byte_ctrl.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_master_top' (6#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_master_top.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_config' (7#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/i2c_master/i2c_config.v:30]
+INFO: [Synth 8-6157] synthesizing module 'lut_si9134' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/lut_si9134.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'lut_si9134' (8#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/lut_si9134.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'top' (9#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/top.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.586 ; gain = 131.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.586 ; gain = 131.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1519.586 ; gain = 131.859
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1519.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc:4]
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/sources_1/ip/video_pll/video_pll/video_pll_in_context.xdc] for cell 'video_pll_m0'
+Parsing XDC File [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/constrs_1/new/hdmi_output_test.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/constrs_1/new/hdmi_output_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.srcs/constrs_1/new/hdmi_output_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1632.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1632.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1632.535 ; gain = 244.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu2cg-sfvc784-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1632.535 ; gain = 244.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for video_pll_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1632.535 ; gain = 244.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_bit_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'i2c_master_byte_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_master_top'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |               000000000000000000
+                 start_a |                            00001 |               000000000000000001
+                 start_b |                            00010 |               000000000000000010
+                 start_c |                            00011 |               000000000000000100
+                 start_d |                            00100 |               000000000000001000
+                 start_e |                            00101 |               000000000000010000
+                  stop_a |                            00110 |               000000000000100000
+                  stop_b |                            00111 |               000000000001000000
+                  stop_c |                            01000 |               000000000010000000
+                  stop_d |                            01001 |               000000000100000000
+                    wr_a |                            01010 |               000010000000000000
+                    wr_b |                            01011 |               000100000000000000
+                    wr_c |                            01100 |               001000000000000000
+                    wr_d |                            01101 |               010000000000000000
+                    rd_a |                            01110 |               000000001000000000
+                    rd_b |                            01111 |               000000010000000000
+                    rd_c |                            10000 |               000000100000000000
+                    rd_d |                            10001 |               000001000000000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_bit_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                              000 |                            00000
+                ST_START |                              001 |                            00001
+                 ST_READ |                              010 |                            00010
+                ST_WRITE |                              011 |                            00100
+                  ST_ACK |                              100 |                            01000
+                 ST_STOP |                              101 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'sequential' in module 'i2c_master_byte_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0110 |                             0000
+           S_WR_DEV_ADDR |                             1001 |                             0001
+           S_WR_REG_ADDR |                             0100 |                             0010
+          S_WR_REG_ADDR1 |                             0101 |                             1101
+               S_WR_DATA |                             0000 |                             0011
+          S_RD_DEV_ADDR0 |                             1011 |                             0110
+           S_WR_ERR_NACK |                             1010 |                             0101
+               S_WR_STOP |                             0001 |                             1011
+                S_WR_ACK |                             0010 |                             0100
+           S_RD_REG_ADDR |                             1101 |                             0111
+          S_RD_REG_ADDR1 |                             1110 |                             1110
+          S_RD_DEV_ADDR1 |                             1111 |                             1000
+               S_RD_DATA |                             1100 |                             1001
+               S_RD_STOP |                             0111 |                             1010
+                S_RD_ACK |                             1000 |                             1111
+                  S_WAIT |                             0011 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_master_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                              000
+          S_WR_I2C_CHECK |                               01 |                              001
+                S_WR_I2C |                               10 |                              010
+           S_WR_I2C_DONE |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'i2c_config'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1632.535 ; gain = 244.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 37    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	  18 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	  24 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 23    
+	   6 Input    4 Bit        Muxes := 1     
+	  15 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	  15 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 29    
+	  10 Input    1 Bit        Muxes := 1     
+	  18 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:72)
+BRAMs: 300 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1632.535 ; gain = 244.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2251.047 ; gain = 863.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2272.133 ; gain = 884.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module video_pll_m0 has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_pll     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |video_pll |     1|
+|2     |BUFG      |     1|
+|3     |CARRY8    |     2|
+|4     |LUT1      |    12|
+|5     |LUT2      |    21|
+|6     |LUT3      |    33|
+|7     |LUT4      |    33|
+|8     |LUT5      |    37|
+|9     |LUT6      |    90|
+|10    |MUXF7     |     2|
+|11    |FDCE      |    27|
+|12    |FDPE      |     2|
+|13    |FDRE      |   119|
+|14    |FDSE      |     9|
+|15    |IBUF      |     1|
+|16    |IOBUF     |     2|
+|17    |OBUF      |    29|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 2282.988 ; gain = 782.313
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2282.988 ; gain = 895.262
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2289.910 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2309.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 2309.078 ; gain = 1232.035
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/11_hdmi_out_test/hdmi_out_test.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 14:44:46 2020...

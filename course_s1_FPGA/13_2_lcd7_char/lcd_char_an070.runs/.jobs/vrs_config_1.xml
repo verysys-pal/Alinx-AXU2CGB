@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="video_pll_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/video_pll_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="osd_rom_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/osd_rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="video_pll_synth_1"/>
+		<Parent Id="osd_rom_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="video_pll_synth_1"/>
+		<Parent Id="osd_rom_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

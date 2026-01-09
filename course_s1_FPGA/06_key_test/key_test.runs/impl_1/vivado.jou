@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov  3 13:55:29 2020
+# Process ID: 14028
+# Current directory: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/06_key_test/key_test.runs/impl_1
+# Command line: vivado.exe -log key_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source key_test.tcl -notrace
+# Log file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/06_key_test/key_test.runs/impl_1/key_test.vdi
+# Journal file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/06_key_test/key_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source key_test.tcl -notrace

@@ -1,0 +1,88 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Nov  3 14:50:25 2020
+| Host         : DESKTOP-0FF260C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xczu2cg
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    10 |
+|    Minimum number of control sets                        |    10 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     9 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    10 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            6 |
+| No           | No                    | Yes                    |              57 |           18 |
+| No           | Yes                   | No                     |              27 |            7 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              39 |           10 |
+| Yes          | Yes                   | No                     |              14 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                   Enable Signal                   |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+---------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  video_pll_m0/inst/clk_out1 |                                                   | osd_display_m0/region_active_d0   |                2 |              3 |         1.50 |
+|  video_pll_m0/inst/clk_out1 | color_bar_m0/rgb_b_reg[7]_i_1_n_0                 | video_pll_m0/inst/locked          |                2 |              3 |         1.50 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/timing_gen_xy_m0/y_cnt[11]_i_1_n_0 | video_pll_m0/inst/locked          |                3 |             12 |         4.00 |
+|  video_pll_m0/inst/clk_out1 | color_bar_m0/active_x[11]_i_1_n_0                 | video_pll_m0/inst/locked          |                3 |             12 |         4.00 |
+|  video_pll_m0/inst/clk_out1 | color_bar_m0/v_cnt_1                              | video_pll_m0/inst/locked          |                3 |             12 |         4.00 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/region_active                      | osd_display_m0/osd_ram_addr0      |                3 |             14 |         4.67 |
+|  video_pll_m0/inst/clk_out1 |                                                   |                                   |                6 |             18 |         3.00 |
+|  video_pll_m0/inst/clk_out1 |                                                   | osd_display_m0/v_data[23]_i_1_n_0 |                5 |             24 |         4.80 |
+|  video_pll_m0/inst/clk_out2 |                                                   | video_pll_m0/inst/locked          |                5 |             26 |         5.20 |
+|  video_pll_m0/inst/clk_out1 |                                                   | video_pll_m0/inst/locked          |               13 |             31 |         2.38 |
++-----------------------------+---------------------------------------------------+-----------------------------------+------------------+----------------+--------------+
+
+

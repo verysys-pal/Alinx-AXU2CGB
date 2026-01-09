@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov  3 14:48:25 2020
+# Process ID: 10992
+# Current directory: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/synth_1/top.vds
+# Journal file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace

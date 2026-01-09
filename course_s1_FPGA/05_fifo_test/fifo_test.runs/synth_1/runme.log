@@ -1,0 +1,271 @@
+
+*** Running vivado
+    with args -log fifo_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_test.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source fifo_test.tcl -notrace
+Command: synth_design -top fifo_test -part xczu2cg-sfvc784-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Device 21-403] Loading part xczu2cg-sfvc784-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13320
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1482.785 ; gain = 74.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fifo_test' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:3]
+	Parameter W_IDLE bound to: 1 - type: integer 
+	Parameter W_FIFO bound to: 2 - type: integer 
+	Parameter R_IDLE bound to: 1 - type: integer 
+	Parameter R_FIFO bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (1#1) [E:/XilinxVitis/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/.Xil/Vivado-13984-DESKTOP-0FF260C/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/.Xil/Vivado-13984-DESKTOP-0FF260C/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ip' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/.Xil/Vivado-13984-DESKTOP-0FF260C/realtime/fifo_ip_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ip' (3#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/.Xil/Vivado-13984-DESKTOP-0FF260C/realtime/fifo_ip_stub.v:6]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_ip' is unconnected for instance 'fifo_ip_inst' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:155]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_ip' is unconnected for instance 'fifo_ip_inst' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:155]
+WARNING: [Synth 8-7023] instance 'fifo_ip_inst' of module 'fifo_ip' has 13 connections declared, but only 11 given [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:155]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:171]
+INFO: [Synth 8-6157] synthesizing module 'ila_m0' [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/.Xil/Vivado-13984-DESKTOP-0FF260C/realtime/ila_m0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_m0' (4#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/.Xil/Vivado-13984-DESKTOP-0FF260C/realtime/ila_m0_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:179]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_wfifo'. This will prevent further optimization [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:171]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_ip_inst'. This will prevent further optimization [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:155]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_rfifo'. This will prevent further optimization [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_test' (5#1) [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/new/fifo_test.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1538.215 ; gain = 130.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1556.086 ; gain = 147.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1556.086 ; gain = 147.891
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1568.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/fifo_ip/fifo_ip/fifo_ip_in_context.xdc] for cell 'fifo_ip_inst'
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/fifo_ip/fifo_ip/fifo_ip_in_context.xdc] for cell 'fifo_ip_inst'
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'fifo_pll'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:2]
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'fifo_pll'
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/ila_m0/ila_m0/ila_m0_in_context.xdc] for cell 'ila_wfifo'
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/ila_m0/ila_m0/ila_m0_in_context.xdc] for cell 'ila_wfifo'
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/ila_m0/ila_m0/ila_m0_in_context.xdc] for cell 'ila_rfifo'
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/sources_1/ip/ila_m0/ila_m0/ila_m0_in_context.xdc] for cell 'ila_rfifo'
+Parsing XDC File [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/constrs_1/new/fifo_test.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/constrs_1/new/fifo_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.srcs/constrs_1/new/fifo_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fifo_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fifo_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1652.500 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.500 ; gain = 244.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu2cg-sfvc784-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.500 ; gain = 244.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for fifo_ip_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for fifo_pll. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_rfifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ila_wfifo. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.500 ; gain = 244.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'write_state_reg' in module 'fifo_test'
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'fifo_test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.500 ; gain = 244.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:72)
+BRAMs: 300 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1652.500 ; gain = 244.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2265.293 ; gain = 857.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2285.063 ; gain = 876.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2285.785 ; gain = 877.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |fifo_ip       |         1|
+|3     |ila_m0        |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |fifo_ip |     1|
+|3     |ila_m0  |     1|
+|4     |ila_m0_ |     1|
+|5     |BUFG    |     1|
+|6     |CARRY8  |     2|
+|7     |LUT1    |     3|
+|8     |LUT2    |     2|
+|9     |LUT3    |     4|
+|10    |LUT4    |     3|
+|11    |LUT5    |     6|
+|12    |LUT6    |    12|
+|13    |FDCE    |    33|
+|14    |FDPE    |     3|
+|15    |IBUF    |     2|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 2292.574 ; gain = 787.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2292.574 ; gain = 884.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2300.617 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2322.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 2322.520 ; gain = 1251.012
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/05_fifo_test/fifo_test.runs/synth_1/fifo_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fifo_test_utilization_synth.rpt -pb fifo_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 14:16:17 2020...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov  3 14:47:17 2020
+# Process ID: 13572
+# Current directory: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/osd_rom_synth_1
+# Command line: vivado.exe -log osd_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source osd_rom.tcl
+# Log file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/osd_rom_synth_1/osd_rom.vds
+# Journal file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_2_lcd7_char/lcd_char_an070.runs/osd_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source osd_rom.tcl -notrace

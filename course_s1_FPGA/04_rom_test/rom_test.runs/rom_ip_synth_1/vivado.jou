@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1_AR75389 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Jan  5 11:49:28 2021
+# Process ID: 15236
+# Current directory: E:/XilinxPrj/AXU2CG/course_32b/04_rom_test/rom_test.runs/rom_ip_synth_1
+# Command line: vivado.exe -log rom_ip.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_ip.tcl
+# Log file: E:/XilinxPrj/AXU2CG/course_32b/04_rom_test/rom_test.runs/rom_ip_synth_1/rom_ip.vds
+# Journal file: E:/XilinxPrj/AXU2CG/course_32b/04_rom_test/rom_test.runs/rom_ip_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rom_ip.tcl -notrace

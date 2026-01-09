@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jan  8 15:39:25 2026
+# Process ID: 12432
+# Current directory: E:/14.FPGA-AXU2CGB/course_s1_fpga/01_led
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6968 E:\14.FPGA-AXU2CGB\course_s1_fpga\01_led\led.xpr
+# Log file: E:/14.FPGA-AXU2CGB/course_s1_fpga/01_led/vivado.log
+# Journal file: E:/14.FPGA-AXU2CGB/course_s1_fpga/01_led\vivado.jou
+# Running On: DESKTOP-FIEP3EA, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 24, Host memory: 67770 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/14.FPGA-AXU2CGB/course_s1_fpga/01_led/led.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
+close_project
+create_project led E:/14.FPGA-AXU2CGB/course_s1_fpga_practice/01_led/led -part xczu2cg-sfvc784-1-e

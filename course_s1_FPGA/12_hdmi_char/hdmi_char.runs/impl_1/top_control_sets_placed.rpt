@@ -1,0 +1,103 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Tue Nov  3 14:46:30 2020
+| Host         : DESKTOP-0FF260C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xczu2cg
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              55 |           31 |
+| No           | No                    | Yes                    |              17 |            7 |
+| No           | Yes                   | No                     |              57 |           14 |
+| Yes          | No                    | No                     |              44 |           20 |
+| Yes          | No                    | Yes                    |              12 |            3 |
+| Yes          | Yes                   | No                     |              53 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |                                           Enable Signal                                          |                                Set/Reset Signal                                | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/cnt[5]_i_1_n_0                    |                                                                                |                1 |              2 |         2.00 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/fSDA                              |                                                                                |                2 |              2 |         1.00 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/FSM_sequential_state_reg[0]_0[0]                                 | video_pll_m0/inst/locked                                                       |                2 |              2 |         1.00 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/dcnt                                             |                                                                                |                2 |              3 |         1.50 |
+|  video_pll_m0/inst/clk_out1 |                                                                                                  | osd_display_m0/region_active_d0                                                |                2 |              3 |         1.50 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/timing_gen_xy_m0/y_cnt[11]_i_1_n_0                                                |                                                                                |                2 |              3 |         1.50 |
+|  video_pll_m0/inst/clk_out1 | hdmi_color_bar/rgb_r_reg0                                                                        |                                                                                |                2 |              3 |         1.50 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/fSDA                              | video_pll_m0/inst/locked                                                       |                1 |              4 |         4.00 |
+|  video_pll_m0/inst/clk_out1 |                                                                                                  | hdmi_color_bar/h_cnt[11]_i_1_n_0                                               |                2 |              4 |         2.00 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/FSM_sequential_c_state[4]_i_1_n_0 |                                                                                |                3 |              5 |         1.67 |
+|  video_pll_m0/inst/clk_out1 | hdmi_color_bar/v_cnt_0                                                                           | hdmi_color_bar/v_cnt[10]_i_1_n_0                                               |                3 |              5 |         1.67 |
+|  video_pll_m0/inst/clk_out2 |                                                                                                  | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/fSDA            |                2 |              7 |         3.50 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/E[0]                              |                                                                                |                4 |              7 |         1.75 |
+|  video_pll_m0/inst/clk_out1 | hdmi_color_bar/v_cnt_0                                                                           |                                                                                |                2 |              7 |         3.50 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/dcnt                                             | video_pll_m0/inst/locked                                                       |                2 |              8 |         4.00 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/timing_gen_xy_m0/y_cnt[11]_i_1_n_0                                                | osd_display_m0/timing_gen_xy_m0/y_cnt[10]_i_1_n_0                              |                3 |              9 |         3.00 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/E[0]                                                             | video_pll_m0/inst/locked                                                       |                3 |             10 |         3.33 |
+|  video_pll_m0/inst/clk_out1 |                                                                                                  | osd_display_m0/timing_gen_xy_m0/de_d0                                          |                3 |             10 |         3.33 |
+|  video_pll_m0/inst/clk_out1 | hdmi_color_bar/active_x[11]_i_1_n_0                                                              |                                                                                |                3 |             12 |         4.00 |
+|  video_pll_m0/inst/clk_out2 | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/cnt[5]_i_1_n_0                    | i2c_config_m0/i2c_master_top_m0/byte_controller/bit_controller/cnt[14]_i_1_n_0 |                5 |             13 |         2.60 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/region_active                                                                     | osd_display_m0/osd_ram_addr0                                                   |                3 |             14 |         4.67 |
+|  video_pll_m0/inst/clk_out2 |                                                                                                  |                                                                                |               13 |             22 |         1.69 |
+|  video_pll_m0/inst/clk_out1 |                                                                                                  | osd_display_m0/v_data[23]_i_1_n_0                                              |                5 |             24 |         4.80 |
+|  video_pll_m0/inst/clk_out2 |                                                                                                  | video_pll_m0/inst/locked                                                       |                9 |             26 |         2.89 |
+|  video_pll_m0/inst/clk_out1 |                                                                                                  |                                                                                |               18 |             34 |         1.89 |
++-----------------------------+--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+----------------+--------------+
+
+

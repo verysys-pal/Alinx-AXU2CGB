@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Nov  3 14:46:45 2020
+# Process ID: 6416
+# Current directory: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_1_lcd7_test/lcd7_test.runs/video_pll_synth_1
+# Command line: vivado.exe -log video_pll.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_pll.tcl
+# Log file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_1_lcd7_test/lcd7_test.runs/video_pll_synth_1/video_pll.vds
+# Journal file: E:/XilinxPrj/AXU2CG/course_32b/course_s1_fpga/13_1_lcd7_test/lcd7_test.runs/video_pll_synth_1\vivado.jou
+#-----------------------------------------------------------
+source video_pll.tcl -notrace
