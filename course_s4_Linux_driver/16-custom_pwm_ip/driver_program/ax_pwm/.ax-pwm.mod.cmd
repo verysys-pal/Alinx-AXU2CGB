@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/new_course4/3eg/16-custom_pwm_ip/driver_program/ax-pwm/ax-pwm.mod := { echo  /home/alinx/Downloads/new_course4/3eg/16-custom_pwm_ip/driver_program/ax-pwm/ax-pwm.o; echo; } > /home/alinx/Downloads/new_course4/3eg/16-custom_pwm_ip/driver_program/ax-pwm/ax-pwm.mod

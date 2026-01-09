@@ -1,0 +1,21 @@
+QMAKE_CXX.QT_COMPILER_STDCXX = 201402L
+QMAKE_CXX.QMAKE_GCC_MAJOR_VERSION = 9
+QMAKE_CXX.QMAKE_GCC_MINOR_VERSION = 2
+QMAKE_CXX.QMAKE_GCC_PATCH_VERSION = 0
+QMAKE_CXX.COMPILER_MACROS = \
+    QT_COMPILER_STDCXX \
+    QMAKE_GCC_MAJOR_VERSION \
+    QMAKE_GCC_MINOR_VERSION \
+    QMAKE_GCC_PATCH_VERSION
+QMAKE_CXX.INCDIRS = \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include/c++/9.2.0 \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include/c++/9.2.0/arm-xilinx-linux-gnueabi \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include/c++/9.2.0/backward \
+    /tools/sdk/arm2020.1/sysroots/x86_64-petalinux-linux/usr/lib/arm-xilinx-linux-gnueabi/gcc/arm-xilinx-linux-gnueabi/9.2.0/include \
+    /tools/sdk/arm2020.1/sysroots/x86_64-petalinux-linux/usr/lib/arm-xilinx-linux-gnueabi/gcc/arm-xilinx-linux-gnueabi/9.2.0/include-fixed \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include
+QMAKE_CXX.LIBDIRS = \
+    /tools/sdk/arm2020.1/sysroots/x86_64-petalinux-linux/usr/lib/arm-xilinx-linux-gnueabi/gcc/arm-xilinx-linux-gnueabi/9.2.0 \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/lib \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib/arm-xilinx-linux-gnueabi/9.2.0 \
+    /tools/sdk/arm2020.1/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib

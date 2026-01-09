@@ -1,0 +1,25 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+/* SD */
+&sdhci1 {
+	disable-wp;
+	no-1-8-v;
+};
+
+/* USB */
+&dwc3_0 {
+	status = "okay";
+	dr_mode = "host";
+};
+
+&ad7606_sample_0 {
+	compatible = "alinx,axi-adc-dma";
+	dmas = <&axi_dma_0 1>;
+	dma-names = "axidma1";
+};
+
+
+
+

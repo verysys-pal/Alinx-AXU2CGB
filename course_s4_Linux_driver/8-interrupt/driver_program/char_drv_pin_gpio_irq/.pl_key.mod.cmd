@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_irq/pl_key.mod := { echo  /home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_irq/pl_key.o; echo; } > /home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_irq/pl_key.mod

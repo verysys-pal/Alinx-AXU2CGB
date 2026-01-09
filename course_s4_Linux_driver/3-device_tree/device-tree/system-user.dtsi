@@ -1,0 +1,26 @@
+/include/ "system-conf.dtsi"
+/ {
+	alinx_dev{
+		#address-cells = <1>;
+		#size-cells = <1>;
+		alinx_led {    
+			reg = <  
+				0xFF0A02C4 0x01    /* gpio方向寄存器 */  
+				0xFF0A02C8 0x01    /* gpio使能寄存器 */  
+				0xFF0A004C 0x01    /* gpio控制寄存器 */  
+			>;  
+		};
+	};
+};
+
+/* SD */
+&sdhci1 {
+	disable-wp;
+	no-1-8-v;
+};
+
+/* USB */
+&dwc3_0 {
+	status = "okay";
+	dr_mode = "host";
+};

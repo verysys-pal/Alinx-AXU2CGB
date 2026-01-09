@@ -1,0 +1,26 @@
+/include/ "system-conf.dtsi"
+/ {
+};
+
+/* SD */
+&sdhci1 {
+	disable-wp;
+	no-1-8-v;
+};
+
+/* USB  */
+&dwc3_0 {
+	status = "okay";
+	dr_mode = "host";
+};
+
+&qspi {
+	status = "okay";
+
+	qflash: mt25qu256@0 {
+		compatible = "mt25qu256";
+		reg = <0>;
+		spi-max-frequency = <40000000>;
+		m25p,fast-read;
+	};
+};
