@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/new_course4/3eg/8-interrupt/driver_program/char_drv_pin_gpio_irq/pl-key.mod := { echo  /home/alinx/Downloads/new_course4/3eg/8-interrupt/driver_program/char_drv_pin_gpio_irq/pl-key.o; echo; } > /home/alinx/Downloads/new_course4/3eg/8-interrupt/driver_program/char_drv_pin_gpio_irq/pl-key.mod

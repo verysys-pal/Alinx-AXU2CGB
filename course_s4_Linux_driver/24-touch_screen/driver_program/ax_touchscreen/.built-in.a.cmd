@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/linux_drvs/ax_touchscreen/built-in.a := rm -f /home/alinx/Downloads/linux_drvs/ax_touchscreen/built-in.a; aarch64-linux-gnu-ar cDPrST /home/alinx/Downloads/linux_drvs/ax_touchscreen/built-in.a 

@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_irq/built-in.a := rm -f /home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_irq/built-in.a; aarch64-linux-gnu-ar cDPrST /home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_irq/built-in.a 

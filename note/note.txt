@@ -35,6 +35,37 @@ $ git push -u origin main --force
   + e3f42a2...bfbcee9 main -> main (forced update)
   branch 'main' set up to track 'origin/main'.
 
+✅.gitattributes 파일 생성 위치와 방법
+$ git rev-parse --show-toplevel
+$ touch .gitattributes
+
+# Force LF line endings for Linux / PetaLinux
+* text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# PetaLinux config / project files
+*.project text eol=lf
+*.config text eol=lf
+
+$ git status
+$ git add .gitattributes
+$ git commit -m "Add .gitattributes to enforce LF line endings"
+
+
+현재 작업에서만 autocrlf 비활성화
+$ git config core.autocrlf false
+git add .
+git commit -m "commit without line ending conversion"
+git push
+
+
+
+
+
+
+
 
 ✅ 마크다운
 https://gist.github.com/ihoneymon/652be052a0727ad59601

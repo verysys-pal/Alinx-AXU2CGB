@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/linux_drvs/ax_adc/ax-adc-drv/ax-ad9238.mod := { echo  /home/alinx/Downloads/linux_drvs/ax_adc/ax-adc-drv/ax-ad9238.o; echo; } > /home/alinx/Downloads/linux_drvs/ax_adc/ax-adc-drv/ax-ad9238.mod

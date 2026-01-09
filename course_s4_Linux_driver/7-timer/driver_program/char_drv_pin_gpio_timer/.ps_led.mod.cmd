@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_timer/ps_led.mod := { echo  /home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_timer/ps_led.o; echo; } > /home/alinx/Downloads/linux_drvs/char_drv_pin_gpio_timer/ps_led.mod

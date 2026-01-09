@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/new_course4/3eg/1-字符设备/driver_program/char_drv/built-in.a := rm -f /home/alinx/Downloads/new_course4/3eg/1-字符设备/driver_program/char_drv/built-in.a; aarch64-linux-gnu-ar cDPrST /home/alinx/Downloads/new_course4/3eg/1-字符设备/driver_program/char_drv/built-in.a 

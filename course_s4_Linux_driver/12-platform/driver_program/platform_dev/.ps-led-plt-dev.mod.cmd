@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/linux_drvs/platform_dev/ps-led-plt-dev.mod := { echo  /home/alinx/Downloads/linux_drvs/platform_dev/ps-led-plt-dev.o; echo; } > /home/alinx/Downloads/linux_drvs/platform_dev/ps-led-plt-dev.mod

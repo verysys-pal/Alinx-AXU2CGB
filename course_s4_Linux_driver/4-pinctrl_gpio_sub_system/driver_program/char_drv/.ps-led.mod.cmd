@@ -1,0 +1,1 @@
+cmd_/home/alinx/Downloads/new_course4/3eg/4-pinctrl_gpio_sub_system/driver_program/char_drv/ps-led.mod := { echo  /home/alinx/Downloads/new_course4/3eg/4-pinctrl_gpio_sub_system/driver_program/char_drv/ps-led.o; echo; } > /home/alinx/Downloads/new_course4/3eg/4-pinctrl_gpio_sub_system/driver_program/char_drv/ps-led.mod

@@ -1,0 +1,1 @@
+cmd_/home/alinx/course/2CGA/course_s4/1-char_driver/driver_program/char_drv/pl-led.mod := { echo  /home/alinx/course/2CGA/course_s4/1-char_driver/driver_program/char_drv/pl-led.o; echo; } > /home/alinx/course/2CGA/course_s4/1-char_driver/driver_program/char_drv/pl-led.mod
