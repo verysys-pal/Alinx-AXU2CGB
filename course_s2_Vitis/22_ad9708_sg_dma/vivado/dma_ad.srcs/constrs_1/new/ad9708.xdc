@@ -1,0 +1,12 @@
+set_property PACKAGE_PIN A13 [get_ports dac_clk]
+set_property PACKAGE_PIN B13 [get_ports {dac_data[7]}]
+set_property PACKAGE_PIN A14 [get_ports {dac_data[6]}]
+set_property PACKAGE_PIN B14 [get_ports {dac_data[5]}]
+set_property PACKAGE_PIN E13 [get_ports {dac_data[4]}]
+set_property PACKAGE_PIN E14 [get_ports {dac_data[3]}]
+set_property PACKAGE_PIN A15 [get_ports {dac_data[2]}]
+set_property PACKAGE_PIN B15 [get_ports {dac_data[1]}]
+set_property PACKAGE_PIN C13	 [get_ports {dac_data[0]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports dac_clk]
+set_property IOSTANDARD LVCMOS33 [get_ports {dac_data[*]}]

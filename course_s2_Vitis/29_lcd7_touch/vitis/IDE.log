@@ -1,0 +1,28 @@
+14:54:50 INFO  : Registering command handlers for Vitis TCF services
+14:54:50 INFO  : Result from executing command 'getProjects': 
+14:54:52 INFO  : Platform repository initialization has completed.
+14:54:52 INFO  : Result from executing command 'getPlatforms': 
+14:54:52 INFO  : plnx-install-location is set to ''
+14:54:52 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:54:52 INFO  : Result from executing command 'getPlatforms': 
+14:54:52 INFO  : Result from executing command 'reportPlatform': {design_1_wrapper={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a53, CpuInstance=psu_cortexa53_0}}}
+14:54:52 INFO  : Result from executing command 'reportPlatform': {design_1_wrapper={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a53, CpuInstance=psu_cortexa53_0}}}
+14:54:52 INFO  : Result from executing command 'reportPlatform': {design_1_wrapper={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a53, CpuInstance=psu_cortexa53_0}}}
+14:55:01 INFO  : Successfully done query RDI_DATADIR 
+14:55:03 INFO  : Result from executing command 'reportPlatform': {design_1_wrapper={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a53, CpuInstance=psu_cortexa53_0}}}
+14:55:03 INFO  : Result from executing command 'reportPlatform': {design_1_wrapper={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a53, CpuInstance=psu_cortexa53_0}}}
+14:55:03 INFO  : Result from executing command 'reportPlatform': {design_1_wrapper={standalone_domain={Os=standalone, DomainName=standalone_domain, CpuType=cortex-a53, CpuInstance=psu_cortexa53_0}}}
+14:56:33 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:56:33 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|E:/XilinxPrj/AXU2CG/course_64b/course_s2/29_lcd7_touch/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+14:57:02 INFO  : Checking for BSP changes to sync application flags for project 'lcd_display'...
+14:57:13 INFO  : Checking for BSP changes to sync application flags for project 'lcd_touch'...
+14:57:22 ERROR : xsct server communication channel has closed unexpectedly.
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.net.SocketInputStream.read(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read1(Unknown Source)
+	at java.base/java.io.BufferedInputStream.read(Unknown Source)
+	at java.base/java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)

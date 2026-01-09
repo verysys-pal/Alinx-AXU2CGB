@@ -1,0 +1,14 @@
+TRACE::2022-05-17.14:57:07::SCWBifWriter::Found the complete platform E:/XilinxPrj/AXU2CG/course_64b/course_s2/29_lcd7_touch/vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+TRACE::2022-05-17.14:57:07::SCWBifWriter::hardware databse : design_1_wrapper_0
+TRACE::2022-05-17.14:57:07::SCWBifWriter::bitstream found in the design
+TRACE::2022-05-17.14:57:07::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2022-05-17.14:57:07::SCWBifWriter::proc type : 
+TRACE::2022-05-17.14:57:07::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2022-05-17.14:57:07::SCWBifWriter::Device type is : zynqMP
+TRACE::2022-05-17.14:57:07::SCWBifWriter::Writing BIF to file : E:/XilinxPrj/AXU2CG/course_64b/course_s2/29_lcd7_touch/vitis/lcd_display_system/Debug/system.bif
+TRACE::2022-05-17.14:57:07::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2022-05-17.14:57:07::SCWBifWriter::System Command Ran  E:/XilinxVitis/Vitis/2020.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  E:/XilinxPrj/AXU2CG/course_64b/course_s2/29_lcd7_touch/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+TRACE::2022-05-17.14:57:07::SCWBifWriter:: Command Ran  E:/XilinxVitis/Vitis/2020.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  E:/XilinxPrj/AXU2CG/course_64b/course_s2/29_lcd7_touch/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+TRACE::2022-05-17.14:57:07::SCWBifWriter::FSBL processor, command ran E:/XilinxVitis/Vitis/2020.1/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-readelf -A  E:/XilinxPrj/AXU2CG/course_64b/course_s2/29_lcd7_touch/vitis/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+TRACE::2022-05-17.14:57:07::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2022-05-17.14:57:07::SCWBifWriter::Boot processor is :a53-0

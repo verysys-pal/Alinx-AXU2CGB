@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov 13 12:40:25 2020
+# Process ID: 12684
+# Current directory: E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_2_synth_1
+# Command line: vivado.exe -log design_1_auto_us_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_us_2.tcl
+# Log file: E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_2_synth_1/design_1_auto_us_2.vds
+# Journal file: E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_auto_us_2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XilinxVitis/Vivado/2020.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_us_2, cache-ID = c6db4a5e46bf65f4.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 12:40:32 2020...

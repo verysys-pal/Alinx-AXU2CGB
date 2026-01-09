@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_ad9767_send_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_ad9767_send_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_rst_ps8_0_149M_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_rst_ps8_0_149M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_dac_125M_reset_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_dac_125M_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_dma_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_1_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_2_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_1_synth_1"/>
+	</Run>
+	<Run Id="design_1_util_vector_logic_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_3_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_dma_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_axi_dma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_dma_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_ad9767_send_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_ad9767_send_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_ad9767_send_1_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_axi_gpio_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_3_synth_1"/>
+	</Run>
+	<Run Id="design_1_xbar_1_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/design_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_ad9767_send_1_0_synth_1"/>
+		<Parent Id="design_1_rst_ps8_0_149M_0_synth_1"/>
+		<Parent Id="design_1_dac_125M_reset_0_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_axi_dma_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_1_synth_1"/>
+		<Parent Id="design_1_auto_us_2_synth_1"/>
+		<Parent Id="design_1_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_3_synth_1"/>
+		<Parent Id="design_1_axi_dma_1_0_synth_1"/>
+		<Parent Id="design_1_ad9767_send_0_0_synth_1"/>
+		<Parent Id="design_1_axi_gpio_0_0_synth_1"/>
+		<Parent Id="design_1_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_0_synth_1"/>
+		<Parent Id="design_1_xbar_1_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/course_s2/23_ad9767_sg_dma/vivado/dma_da.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="design_1_ad9767_send_1_0_synth_1"/>
+		<Parent Id="design_1_rst_ps8_0_149M_0_synth_1"/>
+		<Parent Id="design_1_dac_125M_reset_0_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_axi_dma_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_1_synth_1"/>
+		<Parent Id="design_1_auto_us_2_synth_1"/>
+		<Parent Id="design_1_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_3_synth_1"/>
+		<Parent Id="design_1_axi_dma_1_0_synth_1"/>
+		<Parent Id="design_1_ad9767_send_0_0_synth_1"/>
+		<Parent Id="design_1_axi_gpio_0_0_synth_1"/>
+		<Parent Id="design_1_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_0_synth_1"/>
+		<Parent Id="design_1_xbar_1_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

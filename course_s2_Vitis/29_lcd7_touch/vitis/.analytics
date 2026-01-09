@@ -1,0 +1,8 @@
+timestamp=[2022-05-17 14:54:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.008, duration_ms=2008, data={}
+timestamp=[2022-05-17 14:55:03], mode=APP_CREATION, duration=0:00:02.801, duration_ms=2801, data={name=lcd_display, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=design_1_wrapper, application_type=application}
+timestamp=[2022-05-17 14:55:05], mode=APP_CREATION, duration=0:00:01.555, duration_ms=1555, data={name=lcd_touch, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=design_1_wrapper, application_type=application}
+timestamp=[2022-05-17 14:57:02], mode=PLATFORM_GENERATION, duration=0:00:28.720, duration_ms=28720, data={name=design_1_wrapper}
+timestamp=[2022-05-17 14:57:05], mode=BUILD, duration=0:00:02.790, duration_ms=2790, data={name=lcd_display, configuration=Debug, clean_build=false}
+timestamp=[2022-05-17 14:57:12], mode=BUILD, duration=0:00:06.673, duration_ms=6673, data={name=lcd_display_system, configuration=Debug, clean_build=false}
+timestamp=[2022-05-17 14:57:15], mode=BUILD, duration=0:00:01.958, duration_ms=1958, data={name=lcd_touch, configuration=Debug, clean_build=false}
+timestamp=[2022-05-17 14:57:21], mode=BUILD, duration=0:00:05.209, duration_ms=5209, data={name=lcd_touch_system, configuration=Debug, clean_build=false}

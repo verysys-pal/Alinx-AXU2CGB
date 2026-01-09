@@ -1,0 +1,339 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/XilinxVitis/Vivado/2020.1/data/ip'.
+Command: synth_design -top top -part xczu2cg-sfvc784-1-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu2cg'
+INFO: [Device 21-403] Loading part xczu2cg-sfvc784-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13056
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1473.418 ; gain = 75.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mem_test' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/mem_test.v:20]
+	Parameter MEM_DATA_BITS bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 27 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter MEM_READ bound to: 3'b001 
+	Parameter MEM_WRITE bound to: 3'b010 
+	Parameter BURST_LEN bound to: 128 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem_test' (1#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/mem_test.v:20]
+WARNING: [Synth 8-689] width (32) of port connection 'rd_burst_addr' does not match port width (27) of module 'mem_test' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:109]
+WARNING: [Synth 8-689] width (32) of port connection 'wr_burst_addr' does not match port width (27) of module 'mem_test' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'aq_axi_master' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/aq_axi_master.v:39]
+	Parameter S_WR_IDLE bound to: 3'b000 
+	Parameter S_WA_WAIT bound to: 3'b001 
+	Parameter S_WA_START bound to: 3'b010 
+	Parameter S_WD_WAIT bound to: 3'b011 
+	Parameter S_WD_PROC bound to: 3'b100 
+	Parameter S_WR_WAIT bound to: 3'b101 
+	Parameter S_WR_DONE bound to: 3'b110 
+	Parameter S_RD_IDLE bound to: 3'b000 
+	Parameter S_RA_WAIT bound to: 3'b001 
+	Parameter S_RA_START bound to: 3'b010 
+	Parameter S_RD_WAIT bound to: 3'b011 
+	Parameter S_RD_PROC bound to: 3'b100 
+	Parameter S_RD_DONE bound to: 3'b101 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/aq_axi_master.v:350]
+INFO: [Synth 8-6155] done synthesizing module 'aq_axi_master' (2#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/aq_axi_master.v:39]
+WARNING: [Synth 8-689] width (1) of port connection 'M_AXI_ARLOCK' does not match port width (2) of module 'aq_axi_master' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:156]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/.Xil/Vivado-7468-DESKTOP-0FF260C/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (3#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/.Xil/Vivado-7468-DESKTOP-0FF260C/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:185]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:185]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:185]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:185]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:185]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/.Xil/Vivado-7468-DESKTOP-0FF260C/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (4#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/.Xil/Vivado-7468-DESKTOP-0FF260C/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (5#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (6#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_HP0_rid' does not match port width (6) of module 'design_1_wrapper' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 'S_AXI_HP0_bid' does not match port width (6) of module 'design_1_wrapper' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:228]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_aruser' of module 'design_1_wrapper' is unconnected for instance 'ps_block' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:197]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_awuser' of module 'design_1_wrapper' is unconnected for instance 'ps_block' [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:197]
+WARNING: [Synth 8-7023] instance 'ps_block' of module 'design_1_wrapper' has 42 connections declared, but only 40 given [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:197]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mem_test_m0'. This will prevent further optimization [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:101]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_aq_axi_master'. This will prevent further optimization [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'top' (7#1) [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/new/top.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1530.914 ; gain = 132.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1548.781 ; gain = 150.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1548.781 ; gain = 150.574
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1560.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ps_block/design_1_i/zynq_ultra_ps_e_0'
+WARNING: [Vivado 12-584] No ports matched ''. [e:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc:2]
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ps_block/design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [e:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'ps_block/design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [e:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'ps_block/design_1_i/proc_sys_reset_0'
+Parsing XDC File [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1656.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1656.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1656.348 ; gain = 258.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu2cg-sfvc784-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1656.348 ; gain = 258.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ps_block/design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ps_block/design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ps_block/design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1656.348 ; gain = 258.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mem_test'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'aq_axi_master'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'aq_axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+               MEM_WRITE |                               01 |                              010
+                MEM_READ |                               10 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mem_test'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_WR_IDLE |                              000 |                              000
+               S_WA_WAIT |                              001 |                              001
+              S_WA_START |                              010 |                              010
+               S_WD_WAIT |                              011 |                              011
+               S_WD_PROC |                              100 |                              100
+               S_WR_WAIT |                              101 |                              101
+               S_WR_DONE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_RD_IDLE |                              000 |                              000
+               S_RA_WAIT |                              001 |                              001
+              S_RA_START |                              010 |                              010
+               S_RD_WAIT |                              011 |                              011
+               S_RD_PROC |                              100 |                              100
+               S_RD_DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'aq_axi_master'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1656.348 ; gain = 258.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               27 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 3     
+	   6 Input   32 Bit        Muxes := 3     
+	   3 Input   27 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   7 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 17    
+	   3 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:72)
+BRAMs: 300 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1656.348 ; gain = 258.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2267.129 ; gain = 868.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2294.441 ; gain = 896.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2298.016 ; gain = 899.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_proc_sys_reset_0_0  |         1|
+|2     |design_1_zynq_ultra_ps_e_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_1_proc_sys_reset_0  |     1|
+|2     |design_1_zynq_ultra_ps_e_0 |     1|
+|3     |CARRY8                     |    34|
+|4     |LUT1                       |   117|
+|5     |LUT2                       |    56|
+|6     |LUT3                       |    86|
+|7     |LUT4                       |    35|
+|8     |LUT5                       |    97|
+|9     |LUT6                       |    58|
+|10    |FDCE                       |   273|
+|11    |FDRE                       |     1|
+|12    |OBUF                       |     1|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2301.816 ; gain = 796.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2301.816 ; gain = 903.609
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2301.816 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2326.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:50 . Memory (MB): peak = 2326.797 ; gain = 1252.805
+INFO: [Common 17-1381] The checkpoint 'E:/XilinxPrj/AXU2CG/course_64b/15_pl_read_write_ps_ddr/vivado/pl_read_write_ps_ddr.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 13:30:12 2020...

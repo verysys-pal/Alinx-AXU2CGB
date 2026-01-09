@@ -1,0 +1,53 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.754301",
+   "Default View_TopLeft":"-175,-182",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port adc_ch0_clk -pg 1 -lvl 9 -x 3010 -y 610 -defaultsOSRD
+preplace port adc_ch1_clk -pg 1 -lvl 9 -x 3010 -y 630 -defaultsOSRD
+preplace portBus adc_ch0_data -pg 1 -lvl 0 -x 0 -y 950 -defaultsOSRD
+preplace portBus adc_ch1_data -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 6 -x 2020 -y 470 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1160 -y 140 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 4 -x 1160 -y 540 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 5 -x 1540 -y 220 -defaultsOSRD
+preplace inst axis_register_slice_0 -pg 1 -lvl 3 -x 840 -y 780 -defaultsOSRD
+preplace inst axis_register_slice_1 -pg 1 -lvl 3 -x 840 -y 550 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 7 -x 2500 -y 550 -defaultsOSRD
+preplace inst rst_clk_adc -pg 1 -lvl 1 -x 210 -y 840 -defaultsOSRD
+preplace inst rst_ps7_0_142M -pg 1 -lvl 1 -x 210 -y 660 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1540 -y 500 -defaultsOSRD
+preplace inst ad9238_sample_0 -pg 1 -lvl 8 -x 2840 -y 760 -defaultsOSRD
+preplace inst ad9238_sample_1 -pg 1 -lvl 2 -x 570 -y 530 -defaultsOSRD
+preplace netloc ARESETN_1 1 1 6 NJ 680 NJ 680 NJ 680 1380 590 1710J 370 2350
+preplace netloc Net 1 0 8 40 550 390 690 710 630 960 30 1370 570 1720 380 2330 790 2670
+preplace netloc adc_data_0_3 1 0 8 NJ 950 NJ 950 NJ 950 990J 770 NJ 770 NJ 770 NJ 770 2690J
+preplace netloc adc_data_1_1 1 0 2 NJ 520 NJ
+preplace netloc axi_dma_0_s2mm_introut 1 4 1 1360 170n
+preplace netloc axi_dma_1_s2mm_introut 1 4 1 1360 510n
+preplace netloc processing_system7_0_FCLK_CLK2 1 0 9 20 540 410 670 NJ 670 NJ 670 NJ 670 NJ 670 2340 740 2670 630 2990J
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 30 560 380J 660 NJ 660 NJ 660 NJ 660 NJ 660 2320
+preplace netloc rst_clk_32M_0_peripheral_aresetn 1 1 7 400 870 NJ 870 980J 760 NJ 760 NJ 760 NJ 760 2680
+preplace netloc rst_ps7_0_142M_peripheral_aresetn 1 1 7 420 700 720 640 980 250 1390 580 NJ 580 2350 780 2700
+preplace netloc xlconcat_0_dout 1 5 1 N 500
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 1330 70n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 7 1 2680 560n
+preplace netloc ad9238_sample_1_M00_AXIS 1 2 1 N 530
+preplace netloc axi_interconnect_0_M00_AXI 1 5 1 1700 220n
+preplace netloc axis_register_slice_0_M_AXIS 1 3 1 970 110n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 5 990 730 NJ 730 NJ 730 NJ 730 2660
+preplace netloc axi_dma_1_M_AXI_SG 1 4 1 1350 130n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 7 430 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 2650
+preplace netloc axis_register_slice_1_M_AXIS 1 3 1 950 510n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_LPD 1 6 1 2340 430n
+preplace netloc axi_dma_0_M_AXI_SG 1 4 1 N 110
+preplace netloc axi_dma_1_M_AXI_S2MM 1 4 1 1340 90n
+preplace netloc ad9238_sample_0_M00_AXIS 1 2 7 730 430 NJ 430 NJ 430 1690J 360 NJ 360 NJ 360 2980
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 5 990 10 NJ 10 NJ 10 NJ 10 2650
+levelinfo -pg 1 0 210 570 840 1160 1540 2020 2500 2840 3010
+pagesize -pg 1 -db -bbox -sgen -180 0 3140 970
+"
+}
+

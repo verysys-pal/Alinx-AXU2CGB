@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_mipi_csi2_rx_subsyst_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_mipi_csi2_rx_subsyst_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_d10d_xbar_0_synth_1"/>
+		<Parent Id="bd_d10d_rx_0_synth_1"/>
+		<Parent Id="bd_d10d_phy_0_synth_1"/>
+		<Parent Id="bd_d10d_r_sync_0_synth_1"/>
+		<Parent Id="bd_d10d_vfb_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_axi_vdma_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_d10d_xbar_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_d10d_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_d10d_rx_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_d10d_rx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_d10d_phy_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_d10d_phy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_1_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_auto_us_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_axi_vdma_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_axi_vdma_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_axi_vdma_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_axis_subset_converter_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_axis_subset_converter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_d10d_r_sync_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_d10d_r_sync_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axis_subset_converter_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_axis_subset_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_115c_xbar_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_115c_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_d10d_xbar_0_synth_1"/>
+	</Run>
+	<Run Id="bd_d10d_vfb_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_d10d_vfb_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mipi_csi2_rx_subsyst_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_mipi_csi2_rx_subsyst_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="bd_115c_xbar_0_synth_1"/>
+		<Parent Id="bd_115c_phy_0_synth_1"/>
+		<Parent Id="bd_115c_rx_0_synth_1"/>
+		<Parent Id="bd_115c_vfb_0_0_synth_1"/>
+		<Parent Id="bd_115c_r_sync_0_synth_1"/>
+	</Run>
+	<Run Id="bd_115c_phy_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_115c_phy_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_v_demosaic_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_v_demosaic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_v_gamma_lut_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_v_gamma_lut_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_115c_rx_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_115c_rx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_1_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_v_gamma_lut_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_v_gamma_lut_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_v_gamma_lut_1_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_v_demosaic_1_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_v_demosaic_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_v_demosaic_0_0_synth_1"/>
+	</Run>
+	<Run Id="bd_115c_vfb_0_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_115c_vfb_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="bd_115c_r_sync_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/bd_115c_r_sync_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="bd_d10d_r_sync_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_proc_sys_reset_150M_0_synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/design_1_proc_sys_reset_150M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_mipi_csi2_rx_subsyst_0_0_synth_1"/>
+		<Parent Id="design_1_axi_vdma_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_0_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_auto_us_1_synth_1"/>
+		<Parent Id="design_1_axi_vdma_1_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="design_1_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_0_0_synth_1"/>
+		<Parent Id="design_1_mipi_csi2_rx_subsyst_1_0_synth_1"/>
+		<Parent Id="design_1_v_demosaic_0_0_synth_1"/>
+		<Parent Id="design_1_v_gamma_lut_1_0_synth_1"/>
+		<Parent Id="design_1_xbar_1_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_v_gamma_lut_0_0_synth_1"/>
+		<Parent Id="design_1_v_demosaic_1_0_synth_1"/>
+		<Parent Id="design_1_proc_sys_reset_150M_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="E:/XilinxPrj/AXU2CG/course_64b/27_an5641_mipi_dp/vivado/mipi_dp.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="design_1_mipi_csi2_rx_subsyst_0_0_synth_1"/>
+		<Parent Id="design_1_axi_vdma_0_0_synth_1"/>
+		<Parent Id="design_1_auto_us_0_synth_1"/>
+		<Parent Id="bd_d10d_xbar_0_synth_1"/>
+		<Parent Id="bd_d10d_rx_0_synth_1"/>
+		<Parent Id="bd_d10d_phy_0_synth_1"/>
+		<Parent Id="design_1_xbar_0_synth_1"/>
+		<Parent Id="design_1_auto_us_1_synth_1"/>
+		<Parent Id="design_1_axi_vdma_1_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_1_0_synth_1"/>
+		<Parent Id="bd_d10d_r_sync_0_synth_1"/>
+		<Parent Id="design_1_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="design_1_axis_subset_converter_0_0_synth_1"/>
+		<Parent Id="bd_115c_xbar_0_synth_1"/>
+		<Parent Id="bd_d10d_vfb_0_0_synth_1"/>
+		<Parent Id="design_1_mipi_csi2_rx_subsyst_1_0_synth_1"/>
+		<Parent Id="bd_115c_phy_0_synth_1"/>
+		<Parent Id="design_1_v_demosaic_0_0_synth_1"/>
+		<Parent Id="design_1_v_gamma_lut_1_0_synth_1"/>
+		<Parent Id="bd_115c_rx_0_synth_1"/>
+		<Parent Id="design_1_xbar_1_synth_1"/>
+		<Parent Id="design_1_auto_pc_0_synth_1"/>
+		<Parent Id="design_1_v_gamma_lut_0_0_synth_1"/>
+		<Parent Id="design_1_v_demosaic_1_0_synth_1"/>
+		<Parent Id="bd_115c_vfb_0_0_synth_1"/>
+		<Parent Id="bd_115c_r_sync_0_synth_1"/>
+		<Parent Id="design_1_proc_sys_reset_150M_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

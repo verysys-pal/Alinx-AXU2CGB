@@ -1,0 +1,38 @@
+
+✅ git-repo 새로 생성
+echo "# Alinx-AXU2CGB" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:verysys-pal/Alinx-AXU2CGB.git
+git push -u origin main
+-> 권한 문제로 에러 발생 - 아래 단계 시행
+
+
+✅remote URL → HTTPS 설정
+$ cd /e/14.FPGA-AXU2CGB/git_repo
+$ git remote set-url origin https://github.com/verysys-pal/Alinx-AXU2CGB.git
+
+$ git remote -v
+  --------------------------
+  origin  git@github.com:verysys-pal/Alinx-AXU2CGB.git (fetch)
+  origin  git@github.com:verysys-pal/Alinx-AXU2CGB.git (push)
+
+✅ 로컬을 기준으로 강제 푸시
+- GitHub 쪽 main 브랜치에 이미 뭔가 커밋(예: README, .gitignore 등)이 있고
+- 로컬 main 과 서로 다른 히스토리라 그냥 덮어쓸 수 없어서 생긴 에러임
+$ git push -u origin main --force
+  --------------------------
+  Enumerating objects: 1597, done.
+  Counting objects: 100% (1597/1597), done.
+  Delta compression using up to 24 threads
+  Compressing objects: 100% (443/443), done.
+  Writing objects: 100% (1597/1597), 93.29 MiB | 10.64 MiB/s, done.
+  Total 1597 (delta 1023), reused 1597 (delta 1023), pack-reused 0 (from 0)
+  remote: Resolving deltas: 100% (1023/1023), done.
+  To https://github.com/verysys-pal/Alinx-AXU2CGB.git
+  + e3f42a2...bfbcee9 main -> main (forced update)
+  branch 'main' set up to track 'origin/main'.
+
+

@@ -1,0 +1,86 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Nov 13 13:46:43 2020
+| Host         : DESKTOP-0FF260C running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xczu2cg-sfvc784-1-i
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 10
++-----------+----------+-------------------------------------------+------------+
+| Rule      | Severity | Description                               | Violations |
++-----------+----------+-------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay             | 8          |
+| CLKC-58   | Advisory | PLLE4 with global clock driver has no LOC | 2          |
++-----------+----------+-------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_0_data_n[0] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_0_data_n[1] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_0_data_p[0] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_0_data_p[1] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_1_data_n[0] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_1_data_n[1] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_1_data_p[0] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on mipi_phy_if_1_data_p[1] relative to clock(s) clk_pl_1
+Related violations: <none>
+
+CLKC-58#1 Advisory
+PLLE4 with global clock driver has no LOC  
+The PLLE4_ADV cell design_1_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_d10d_phy_0_rx_support_i/slave_rx.bd_d10d_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst CLKIN pin is driven by global Clock buffer design_1_i/zynq_ultra_ps_e_0/inst/pl_clk1_BUFG_inst and does not have a LOC constraint. It is recommended to LOC the PLL and use the CLOCK_DEDICATED_ROUTE constraint on the net driven by the global Clock buffer.
+Related violations: <none>
+
+CLKC-58#2 Advisory
+PLLE4 with global clock driver has no LOC  
+The PLLE4_ADV cell design_1_i/mipi_csi2_rx_subsyst_1/inst/phy/inst/inst/bd_115c_phy_0_rx_support_i/slave_rx.bd_115c_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_USP.plle4_adv_pll0_inst CLKIN pin is driven by global Clock buffer design_1_i/zynq_ultra_ps_e_0/inst/pl_clk1_BUFG_inst and does not have a LOC constraint. It is recommended to LOC the PLL and use the CLOCK_DEDICATED_ROUTE constraint on the net driven by the global Clock buffer.
+Related violations: <none>
+
+

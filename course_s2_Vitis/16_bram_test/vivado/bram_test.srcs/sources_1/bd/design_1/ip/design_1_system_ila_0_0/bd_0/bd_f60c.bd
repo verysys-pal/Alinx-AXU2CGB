@@ -1,0 +1,298 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2B16650C95D30DFB",
+      "design_src": "SBD",
+      "device": "xczu2cg-sfvc784-1-i",
+      "name": "bd_f60c",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ila_lib": ""
+    },
+    "interface_ports": {
+      "SLOT_0_BRAM": {
+        "mode": "Monitor",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MASTER_TYPE": {
+            "value": "BRAM_CTRL"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "RST": {
+            "physical_name": "SLOT_0_BRAM_rst",
+            "direction": "I"
+          },
+          "CLK": {
+            "physical_name": "SLOT_0_BRAM_clk",
+            "direction": "I"
+          },
+          "DIN": {
+            "physical_name": "SLOT_0_BRAM_din",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "EN": {
+            "physical_name": "SLOT_0_BRAM_en",
+            "direction": "I"
+          },
+          "DOUT": {
+            "physical_name": "SLOT_0_BRAM_dout",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "WE": {
+            "physical_name": "SLOT_0_BRAM_we",
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ADDR": {
+            "physical_name": "SLOT_0_BRAM_addr",
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_zynq_ultra_ps_e_0_0_pl_clk0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "99999001",
+            "value_src": "default_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "probe0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "SLOT_0_BRAM_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "SLOT_0_BRAM_din": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_0_BRAM_en": {
+        "direction": "I"
+      },
+      "SLOT_0_BRAM_dout": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "SLOT_0_BRAM_we": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "SLOT_0_BRAM_addr": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ila_lib": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "bd_f60c_ila_lib_0",
+        "parameters": {
+          "ALL_PROBE_SAME_MU": {
+            "value": "TRUE"
+          },
+          "ALL_PROBE_SAME_MU_CNT": {
+            "value": "1"
+          },
+          "C_ADV_TRIGGER": {
+            "value": "FALSE"
+          },
+          "C_DATA_DEPTH": {
+            "value": "1024"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "0"
+          },
+          "C_EN_TIME_TAG": {
+            "value": "0"
+          },
+          "C_ILA_CLK_FREQ": {
+            "value": "99999001"
+          },
+          "C_INPUT_PIPE_STAGES": {
+            "value": "0"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "7"
+          },
+          "C_PROBE0_MU_CNT": {
+            "value": "1"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "32"
+          },
+          "C_TIME_TAG_WIDTH": {
+            "value": "32"
+          },
+          "C_TRIGIN_EN": {
+            "value": "false"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "false"
+          },
+          "C_XLNX_HW_PROBE_INFO": {
+            "value": "DEFAULT"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "ila_lib/clk"
+        ]
+      },
+      "probe0_1": {
+        "ports": [
+          "probe0",
+          "ila_lib/probe0"
+        ]
+      },
+      "SLOT_0_BRAM_rst_1": {
+        "ports": [
+          "SLOT_0_BRAM_rst",
+          "ila_lib/probe1"
+        ]
+      },
+      "SLOT_0_BRAM_din_1": {
+        "ports": [
+          "SLOT_0_BRAM_din",
+          "ila_lib/probe2"
+        ]
+      },
+      "SLOT_0_BRAM_en_1": {
+        "ports": [
+          "SLOT_0_BRAM_en",
+          "ila_lib/probe3"
+        ]
+      },
+      "SLOT_0_BRAM_dout_1": {
+        "ports": [
+          "SLOT_0_BRAM_dout",
+          "ila_lib/probe4"
+        ]
+      },
+      "SLOT_0_BRAM_we_1": {
+        "ports": [
+          "SLOT_0_BRAM_we",
+          "ila_lib/probe5"
+        ]
+      },
+      "SLOT_0_BRAM_addr_1": {
+        "ports": [
+          "SLOT_0_BRAM_addr",
+          "ila_lib/probe6"
+        ]
+      }
+    }
+  }
+}
