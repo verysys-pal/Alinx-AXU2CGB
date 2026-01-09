@@ -36,3 +36,24 @@ $ git push -u origin main --force
   branch 'main' set up to track 'origin/main'.
 
 
+✅ 마크다운
+https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+1.링크
+  [googlelink]: https://google.com "Go google"
+2.이미지
+  # 사이즈 직접지정 (px)
+    ![title](/imges/img.png){: width="100" height="100"}
+  # (차지할 수 있는) 전체범위의 몇퍼센트를 차지할 지 
+    ![title](/imges/img.png){: width="100%" height="100%"}
+3. 줄바꿈
+  3칸 이상 띄어쓰기
+4. 코드
+  ``` 또는 ~~~ 를 입력하여 코드 블럭 삽입 가능
+5. 글자 색 
+  <span style="color: red">red</span>
+  <span style="color: #0000FF">파랑</span>
+  <span style="color: #008000">초록</span>
+  <span style="color: #2D3748; background-color:#fff5b1;"> Strong</span>
+  <span style="color: #808080">그레이</span>
+  <span style="color: #ffd33d">노랑</span>
