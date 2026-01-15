@@ -1,0 +1,86 @@
+%%{ init: { "flowchart": { "htmlLabels": true } } }%%
+flowchart LR
+    %% 입력 클럭 및 BUFG
+    SYSCLK["clk<br/>25MHz system clock"] --> BUFG["BUFG<br/>clock buffer"]
+    BUFG --> PLL["clk_wiz_0<br/>PLL"]
+
+    %% PLL 출력 클럭 및 lock 신호
+    PLL -->|clk_100M| WRCLK["wr_clk<br/>100MHz write clock"]
+    PLL -->|clk_75M| RDCLK["rd_clk<br/>75MHz read clock"]
+    PLL -->|locked| LOCKED["locked<br/>PLL lock flag"]
+
+    %% FIFO 리셋
+    RSTN["fifo_rst_n<br/>FIFO reset (active low)"]
+    LOCKED -->|"fifo_rst_n = locked"| RSTN
+
+    %% 쓰기 도메인
+    subgraph WRITE_DOMAIN["Write domain (wr_clk)"]
+        direction TB
+        W_FSM["Write FSM<br/>states: W_IDLE / W_FIFO"]
+        W_CNT["wcnt<br/>write wait counter"]
+        W_DATA["w_data[15:0]<br/>write data"]
+
+        WRCLK --> W_FSM
+        WRCLK --> W_CNT
+        WRCLK --> W_DATA
+        RSTN --> W_FSM
+        RSTN --> W_CNT
+        RSTN --> W_DATA
+
+        W_FSM -->|"state & full"| WR_EN["wr_en<br/>write enable"]
+    end
+
+    %% 읽기 도메인
+    subgraph READ_DOMAIN["Read domain (rd_clk)"]
+        direction TB
+        R_FSM["Read FSM<br/>states: R_IDLE / R_FIFO"]
+        R_CNT["rcnt<br/>read wait counter"]
+
+        RDCLK --> R_FSM
+        RDCLK --> R_CNT
+        RSTN --> R_FSM
+        RSTN --> R_CNT
+
+        R_FSM -->|"state & empty"| RD_EN["rd_en<br/>read enable"]
+    end
+
+    %% FIFO IP 코어
+    subgraph FIFO_CORE["FIFO IP (fifo_ip)"]
+        direction TB
+        FIFO["FIFO<br/>async, 16-bit x 512"]
+
+        %% 입력
+        W_DATA -->|din| FIFO
+        WRCLK -->|wr_clk| FIFO
+        RDCLK -->|rd_clk| FIFO
+        RSTN -->|~fifo_rst_n as rst| FIFO
+        WR_EN -->|wr_en| FIFO
+        RD_EN -->|rd_en| FIFO
+
+        %% 출력
+        FIFO --> RDATA["r_data[15:0]<br/>read data"]
+        FIFO --> FULL["full<br/>FIFO full flag"]
+        FIFO --> EMPTY["empty<br/>FIFO empty flag"]
+        FIFO --> RDCNT["rd_data_count[8:0]<br/>readable count"]
+        FIFO --> WRCNT["wr_data_count[8:0]<br/>written count"]
+    end
+
+    %% 쓰기측 ILA
+    subgraph ILA_WRITE["ILA write side (ila_wfifo)"]
+        ILA_W["ila_wfifo<br/>write channel probe"]
+        WRCLK --> ILA_W
+        W_DATA -->|probe0| ILA_W
+        WR_EN  -->|probe1| ILA_W
+        FULL   -->|probe2| ILA_W
+        WRCNT  -->|probe3| ILA_W
+    end
+
+    %% 읽기측 ILA
+    subgraph ILA_READ["ILA read side (ila_rfifo)"]
+        ILA_R["ila_rfifo<br/>read channel probe"]
+        RDCLK --> ILA_R
+        RDATA -->|probe0| ILA_R
+        RD_EN -->|probe1| ILA_R
+        EMPTY -->|probe2| ILA_R
+        RDCNT -->|probe3| ILA_R
+    end
