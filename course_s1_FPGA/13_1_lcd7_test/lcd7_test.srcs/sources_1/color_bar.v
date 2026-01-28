@@ -27,7 +27,7 @@
 //2013/4/16                    1.0          Original
 //2013/4/18                    1.1          vs timing
 //2013/5/7                     1.2          remove some warning
-//2017/7/17                    1.3      
+//2017/7/17                    1.3
 //*******************************************************************************/
 `include "video_define.v"
 module color_bar(
@@ -56,56 +56,56 @@ parameter VS_POL = 1'b1;                 //vertical sync polarity, 1 : POSITIVE,
 
 //480x272 9Mhz
 `ifdef  VIDEO_480_272
-parameter H_ACTIVE = 16'd480; 
-parameter H_FP = 16'd2;       
-parameter H_SYNC = 16'd41;    
-parameter H_BP = 16'd2;       
-parameter V_ACTIVE = 16'd272; 
-parameter V_FP  = 16'd2;     
-parameter V_SYNC  = 16'd10;   
-parameter V_BP  = 16'd2;     
+parameter H_ACTIVE = 16'd480;
+parameter H_FP = 16'd2;
+parameter H_SYNC = 16'd41;
+parameter H_BP = 16'd2;
+parameter V_ACTIVE = 16'd272;
+parameter V_FP  = 16'd2;
+parameter V_SYNC  = 16'd10;
+parameter V_BP  = 16'd2;
 parameter HS_POL = 1'b0;
 parameter VS_POL = 1'b0;
 `endif
 
 //640x480 25.175Mhz
 `ifdef  VIDEO_640_480
-parameter H_ACTIVE = 16'd640; 
-parameter H_FP = 16'd16;      
-parameter H_SYNC = 16'd96;    
-parameter H_BP = 16'd48;      
-parameter V_ACTIVE = 16'd480; 
-parameter V_FP  = 16'd10;    
-parameter V_SYNC  = 16'd2;    
-parameter V_BP  = 16'd33;    
+parameter H_ACTIVE = 16'd640;
+parameter H_FP = 16'd16;
+parameter H_SYNC = 16'd96;
+parameter H_BP = 16'd48;
+parameter V_ACTIVE = 16'd480;
+parameter V_FP  = 16'd10;
+parameter V_SYNC  = 16'd2;
+parameter V_BP  = 16'd33;
 parameter HS_POL = 1'b0;
 parameter VS_POL = 1'b0;
 `endif
 
 //800x480 33Mhz
 `ifdef  VIDEO_800_480
-parameter H_ACTIVE = 16'd800; 
-parameter H_FP = 16'd40;      
-parameter H_SYNC = 16'd128;   
-parameter H_BP = 16'd88;      
-parameter V_ACTIVE = 16'd480; 
-parameter V_FP  = 16'd1;     
-parameter V_SYNC  = 16'd3;    
-parameter V_BP  = 16'd21;    
+parameter H_ACTIVE = 16'd800;
+parameter H_FP = 16'd40;
+parameter H_SYNC = 16'd128;
+parameter H_BP = 16'd88;
+parameter V_ACTIVE = 16'd480;
+parameter V_FP  = 16'd1;
+parameter V_SYNC  = 16'd3;
+parameter V_BP  = 16'd21;
 parameter HS_POL = 1'b0;
 parameter VS_POL = 1'b0;
 `endif
 
 //800x600 40Mhz
 `ifdef  VIDEO_800_600
-parameter H_ACTIVE = 16'd800; 
-parameter H_FP = 16'd40;      
-parameter H_SYNC = 16'd128;   
-parameter H_BP = 16'd88;      
-parameter V_ACTIVE = 16'd600; 
-parameter V_FP  = 16'd1;     
-parameter V_SYNC  = 16'd4;    
-parameter V_BP  = 16'd23;    
+parameter H_ACTIVE = 16'd800;
+parameter H_FP = 16'd40;
+parameter H_SYNC = 16'd128;
+parameter H_BP = 16'd88;
+parameter V_ACTIVE = 16'd600;
+parameter V_FP  = 16'd1;
+parameter V_SYNC  = 16'd4;
+parameter V_BP  = 16'd23;
 parameter HS_POL = 1'b1;
 parameter VS_POL = 1'b1;
 `endif
@@ -113,13 +113,13 @@ parameter VS_POL = 1'b1;
 //1024x768 65Mhz
 `ifdef  VIDEO_1024_768
 parameter H_ACTIVE = 16'd1024;
-parameter H_FP = 16'd24;      
-parameter H_SYNC = 16'd136;   
-parameter H_BP = 16'd160;     
-parameter V_ACTIVE = 16'd768; 
-parameter V_FP  = 16'd3;      
-parameter V_SYNC  = 16'd6;    
-parameter V_BP  = 16'd29;     
+parameter H_FP = 16'd24;
+parameter H_SYNC = 16'd136;
+parameter H_BP = 16'd160;
+parameter V_ACTIVE = 16'd768;
+parameter V_FP  = 16'd3;
+parameter V_SYNC  = 16'd6;
+parameter V_BP  = 16'd29;
 parameter HS_POL = 1'b0;
 parameter VS_POL = 1'b0;
 `endif
@@ -129,7 +129,7 @@ parameter VS_POL = 1'b0;
 parameter H_ACTIVE = 16'd1920;
 parameter H_FP = 16'd88;
 parameter H_SYNC = 16'd44;
-parameter H_BP = 16'd148; 
+parameter H_BP = 16'd148;
 parameter V_ACTIVE = 16'd1080;
 parameter V_FP  = 16'd4;
 parameter V_SYNC  = 16'd5;
@@ -137,221 +137,122 @@ parameter V_BP  = 16'd36;
 parameter HS_POL = 1'b1;
 parameter VS_POL = 1'b1;
 `endif
-parameter H_TOTAL = H_ACTIVE + H_FP + H_SYNC + H_BP;//horizontal total time (pixels)
-parameter V_TOTAL = V_ACTIVE + V_FP + V_SYNC + V_BP;//vertical total time (lines)
-//define the RGB values for 8 colors
-parameter WHITE_R       = 8'hff;
-parameter WHITE_G       = 8'hff;
-parameter WHITE_B       = 8'hff;
-parameter YELLOW_R      = 8'hff;
-parameter YELLOW_G      = 8'hff;
-parameter YELLOW_B      = 8'h00;                                
-parameter CYAN_R        = 8'h00;
-parameter CYAN_G        = 8'hff;
-parameter CYAN_B        = 8'hff;                                
-parameter GREEN_R       = 8'h00;
-parameter GREEN_G       = 8'hff;
-parameter GREEN_B       = 8'h00;
-parameter MAGENTA_R     = 8'hff;
-parameter MAGENTA_G     = 8'h00;
-parameter MAGENTA_B     = 8'hff;
-parameter RED_R         = 8'hff;
-parameter RED_G         = 8'h00;
-parameter RED_B         = 8'h00;
-parameter BLUE_R        = 8'h00;
-parameter BLUE_G        = 8'h00;
-parameter BLUE_B        = 8'hff;
-parameter BLACK_R       = 8'h00;
-parameter BLACK_G       = 8'h00;
-parameter BLACK_B       = 8'h00;
+
+
+// 전체 가로/세로 주기 계산
+localparam H_TOTAL = H_ACTIVE + H_FP + H_SYNC + H_BP; //horizontal total time (pixels)
+localparam V_TOTAL = V_ACTIVE + V_FP + V_SYNC + V_BP; //vertical total time (lines)
+
+// 컬러바 너비 (8등분)
+localparam BAR_WIDTH = H_ACTIVE / 8;
+
+//--------------------------------------------------------------------------------
+// 2. 내부 레지스터 및 신호 선언
+//--------------------------------------------------------------------------------
+reg [11:0] h_cnt;           // 수평 카운터 (0 ~ H_TOTAL-1)
+reg [11:0] v_cnt;           // 수직 카운터 (0 ~ V_TOTAL-1)
+reg [11:0] active_x;        // 유효 화면상의 가로 좌표
+reg [11:0] x_offset;        // 스크롤 애니메이션을 위한 오프셋
+wire [11:0] x_moved;        // 오프셋이 적용된 순환 좌표
+
 reg hs_reg;                      //horizontal sync register
 reg vs_reg;                      //vertical sync register
-reg hs_reg_d0;                   //delay 1 clock of 'hs_reg'
-reg vs_reg_d0;                   //delay 1 clock of 'vs_reg'
-reg[11:0] h_cnt;                 //horizontal counter
-reg[11:0] v_cnt;                 //vertical counter
-reg[11:0] active_x;              //video x position 
-reg[11:0] active_y;              //video y position 
-reg[7:0] rgb_r_reg;              //video red data register
-reg[7:0] rgb_g_reg;              //video green data register
-reg[7:0] rgb_b_reg;              //video blue data register
 reg h_active;                    //horizontal video active
 reg v_active;                    //vertical video active
-wire video_active;               //video active(horizontal active and vertical active)
-reg video_active_d0;             //delay 1 clock of video_active
-assign hs = hs_reg_d0;
-assign vs = vs_reg_d0;
-assign video_active = h_active & v_active;
-assign de = video_active_d0;
-assign rgb_r = rgb_r_reg;
-assign rgb_g = rgb_g_reg;
-assign rgb_b = rgb_b_reg;
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		begin
-			hs_reg_d0 <= 1'b0;
-			vs_reg_d0 <= 1'b0;
-			video_active_d0 <= 1'b0;
-		end
-	else
-		begin
-			hs_reg_d0 <= hs_reg;
-			vs_reg_d0 <= vs_reg;
-			video_active_d0 <= video_active;
-		end
+
+reg hs_d0, vs_d0, de_d0;    // 출력 동기화를 위한 지연 레지스터
+reg [23:0] rgb_data;        // {R, G, B} 통합 레지스터
+
+//--------------------------------------------------------------------------------
+// 3. 비디오 타이밍 카운터 및 제어 로직
+//--------------------------------------------------------------------------------
+
+// 수평 카운터: 매 클럭마다 증가
+always @(posedge clk or posedge rst) begin
+    if(rst) h_cnt <= 12'd0;
+    else    h_cnt <= (h_cnt == H_TOTAL - 1) ? 12'd0 : h_cnt + 12'd1;
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		h_cnt <= 12'd0;
-	else if(h_cnt == H_TOTAL - 1)//horizontal counter maximum value
-		h_cnt <= 12'd0;
-	else
-		h_cnt <= h_cnt + 12'd1;
+// 수직 카운터: 한 행(H_FP 지점)이 끝날 때마다 증가
+always @(posedge clk or posedge rst) begin
+    if(rst) v_cnt <= 12'd0;
+    else if(h_cnt == H_FP - 1)
+        v_cnt <= (v_cnt == V_TOTAL - 1) ? 12'd0 : v_cnt + 12'd1;
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		active_x <= 12'd0;
-	else if(h_cnt >= H_FP + H_SYNC + H_BP - 1)//horizontal video active
-		active_x <= h_cnt - (H_FP[11:0] + H_SYNC[11:0] + H_BP[11:0] - 12'd1);
-	else
-		active_x <= active_x;
+// 동기 신호(HS/VS) 생성
+always @(posedge clk or posedge rst) begin
+    if(rst) begin
+        hs_reg <= ~HS_POL;
+        vs_reg <= ~VS_POL;
+    end else begin
+        hs_reg <= (h_cnt >= H_FP && h_cnt < H_FP + H_SYNC) ? HS_POL : ~HS_POL;
+        vs_reg <= (v_cnt >= V_FP && v_cnt < V_FP + V_SYNC) ? VS_POL : ~VS_POL;
+    end
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		v_cnt <= 12'd0;
-	else if(h_cnt == H_FP  - 1)//horizontal sync time
-		if(v_cnt == V_TOTAL - 1)//vertical counter maximum value
-			v_cnt <= 12'd0;
-		else
-			v_cnt <= v_cnt + 12'd1;
-	else
-		v_cnt <= v_cnt;
+// 유효 화면 구간(Active) 판단
+always @(posedge clk or posedge rst) begin
+    if(rst) {h_active, v_active} <= 2'b00;
+    else begin
+        h_active <= (h_cnt >= H_FP + H_SYNC + H_BP);
+        v_active <= (v_cnt >= V_FP + V_SYNC + V_BP);
+    end
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		hs_reg <= 1'b0;
-	else if(h_cnt == H_FP - 1)//horizontal sync begin
-		hs_reg <= HS_POL;
-	else if(h_cnt == H_FP + H_SYNC - 1)//horizontal sync end
-		hs_reg <= ~hs_reg;
-	else
-		hs_reg <= hs_reg;
+// 현재 픽셀의 가로 좌표 계산 (0 ~ H_ACTIVE-1)
+always @(posedge clk or posedge rst) begin
+    if(rst) active_x <= 12'd0;
+    else    active_x <= h_active ? (h_cnt - (H_FP + H_SYNC + H_BP)) : 12'd0;
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		h_active <= 1'b0;
-	else if(h_cnt == H_FP + H_SYNC + H_BP - 1)//horizontal active begin
-		h_active <= 1'b1;
-	else if(h_cnt == H_TOTAL - 1)//horizontal active end
-		h_active <= 1'b0;
-	else
-		h_active <= h_active;
+//--------------------------------------------------------------------------------
+// 4. 스크롤 애니메이션 및 색상 출력 로직
+//--------------------------------------------------------------------------------
+
+// 프레임 오프셋 제어: 수직 동기(VS) 마다 가로 시작점 이동
+always @(posedge vs_reg or posedge rst) begin
+    if(rst) x_offset <= 12'd0;
+    else    x_offset <= (x_offset == 0) ? (H_ACTIVE - 2) : (x_offset - 12'd2);
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		vs_reg <= 1'd0;
-	else if((v_cnt == V_FP - 1) && (h_cnt == H_FP - 1))//vertical sync begin
-		vs_reg <= HS_POL;
-	else if((v_cnt == V_FP + V_SYNC - 1) && (h_cnt == H_FP - 1))//vertical sync end
-		vs_reg <= ~vs_reg;  
-	else
-		vs_reg <= vs_reg;
+// 좌표 변환: 이동된 좌표가 화면 끝을 넘으면 다시 왼쪽에서 시작(Modulo)
+assign x_moved = (active_x + x_offset >= H_ACTIVE) ?
+                 (active_x + x_offset - H_ACTIVE) : (active_x + x_offset);
+
+// 컬러바 색상 결정 (Case문으로 리팩토링)
+always @(posedge clk or posedge rst) begin
+    if(rst) rgb_data <= 24'h000000;
+    else if(h_active && v_active) begin
+        case(x_moved / BAR_WIDTH)
+		        //define the RGB values for 8 colors (R, G, B)
+            3'd0: rgb_data <= {8'hFF, 8'hFF, 8'hFF}; // White
+            3'd1: rgb_data <= {8'hFF, 8'hFF, 8'h00}; // Yellow
+            3'd2: rgb_data <= {8'h00, 8'hFF, 8'hFF}; // Cyan
+            3'd3: rgb_data <= {8'h00, 8'hFF, 8'h00}; // Green
+            3'd4: rgb_data <= {8'hFF, 8'h00, 8'hFF}; // Magenta
+            3'd5: rgb_data <= {8'hFF, 8'h00, 8'h00}; // Red
+            3'd6: rgb_data <= {8'h00, 8'h00, 8'hFF}; // Blue
+            3'd7: rgb_data <= {8'h00, 8'h00, 8'h00}; // Black
+            default: rgb_data <= 24'h000000;
+        endcase
+    end else begin
+        rgb_data <= 24'h000000;
+    end
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		v_active <= 1'd0;
-	else if((v_cnt == V_FP + V_SYNC + V_BP - 1) && (h_cnt == H_FP - 1))//vertical active begin
-		v_active <= 1'b1;
-	else if((v_cnt == V_TOTAL - 1) && (h_cnt == H_FP - 1)) //vertical active end
-		v_active <= 1'b0;   
-	else
-		v_active <= v_active;
+//--------------------------------------------------------------------------------
+// 5. 최종 출력 할당 (타이밍 동기화를 위해 한 클럭 지연)
+//--------------------------------------------------------------------------------
+always @(posedge clk) begin
+    hs_d0 <= hs_reg;
+    vs_d0 <= vs_reg;
+    de_d0 <= (h_active && v_active);
 end
 
-always@(posedge clk or posedge rst)
-begin
-	if(rst == 1'b1)
-		begin
-			rgb_r_reg <= 8'h00;
-			rgb_g_reg <= 8'h00;
-			rgb_b_reg <= 8'h00;
-		end
-	else if(video_active)
-		if(active_x == 12'd0)
-			begin
-				rgb_r_reg <= WHITE_R;
-				rgb_g_reg <= WHITE_G;
-				rgb_b_reg <= WHITE_B;
-			end
-		else if(active_x == (H_ACTIVE/8) * 1)
-			begin
-				rgb_r_reg <= YELLOW_R;
-				rgb_g_reg <= YELLOW_G;
-				rgb_b_reg <= YELLOW_B;
-			end         
-		else if(active_x == (H_ACTIVE/8) * 2)
-			begin
-				rgb_r_reg <= CYAN_R;
-				rgb_g_reg <= CYAN_G;
-				rgb_b_reg <= CYAN_B;
-			end
-		else if(active_x == (H_ACTIVE/8) * 3)
-			begin
-				rgb_r_reg <= GREEN_R;
-				rgb_g_reg <= GREEN_G;
-				rgb_b_reg <= GREEN_B;
-			end
-		else if(active_x == (H_ACTIVE/8) * 4)
-			begin
-				rgb_r_reg <= MAGENTA_R;
-				rgb_g_reg <= MAGENTA_G;
-				rgb_b_reg <= MAGENTA_B;
-			end
-		else if(active_x == (H_ACTIVE/8) * 5)
-			begin
-				rgb_r_reg <= RED_R;
-				rgb_g_reg <= RED_G;
-				rgb_b_reg <= RED_B;
-			end
-		else if(active_x == (H_ACTIVE/8) * 6)
-			begin
-				rgb_r_reg <= BLUE_R;
-				rgb_g_reg <= BLUE_G;
-				rgb_b_reg <= BLUE_B;
-			end 
-		else if(active_x == (H_ACTIVE/8) * 7)
-			begin
-				rgb_r_reg <= BLACK_R;
-				rgb_g_reg <= BLACK_G;
-				rgb_b_reg <= BLACK_B;
-			end
-		else
-			begin
-				rgb_r_reg <= rgb_r_reg;
-				rgb_g_reg <= rgb_g_reg;
-				rgb_b_reg <= rgb_b_reg;
-			end         
-	else
-		begin
-			rgb_r_reg <= 8'h00;
-			rgb_g_reg <= 8'h00;
-			rgb_b_reg <= 8'h00;
-		end
-end
+assign hs = hs_d0;
+assign vs = vs_d0;
+assign de = de_d0;
+assign {rgb_r, rgb_g, rgb_b} = rgb_data;
 
-endmodule 
+endmodule
